@@ -1,11 +1,11 @@
 // #1 Object Destructuring
 export const object = { name: 'elvis', title: 'hip swinger' };
 
-export const {name :person} =object;
-export const {title :job} =object;
+export const {name :person,title:job} =object;
 
-// console.log(person); // 'elvis'
-// console.log(job); // 'hip swinger'
+
+console.log(person); // 'elvis'
+console.log(job); // 'hip swinger'
 
 
 // #2 Object Matching: Nested destructuring
@@ -17,26 +17,28 @@ export const nestedObject = {
   },
   id: 1
 };
-//console.log(nestedObject.user); // 'elvis'
-// console.log(address); // { city: 'denver', state: 'colorado' }
-// console.log(id); // 1
+
+export const {user : user, address:address,id:id}= nestedObject;
+console.log(user); // 'elvis'
+console.log(address); // { city: 'denver', state: 'colorado' }
+console.log(id); // 1
 
 
 // #3 Object with key value pairs: construct a statement
 
-export const wish ={ greeting: 'hello', name: 'taylor!' }
+export const wishes ={wish :"hello",name:"taylor"};
+export const{wish :wish, name:name}=wishes;
 
-//console.log(wish.greeting,wish.name);
-
+console.log(wish,",",name ,"!");
 //  'hello, taylor!'
 
 
 //  #4 Create a new object given the destrutured values above
 
-export const wishe ={ greeting: 'hello', name: 'taylor!' }
-const wish1 = (greeting: string, name: string) =>
-    ` ${greeting} ${name}!`
+export const object1={user : user, address:address,id:id};
+console.log(object1);
 
-wish1(wishe.greeting,wishe.name);
+
+
 
 
