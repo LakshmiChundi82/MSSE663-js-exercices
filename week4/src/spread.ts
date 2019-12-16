@@ -5,13 +5,14 @@ export const originalNumbers = numbers.map(number => number);
 
 export const copyarr=[...originalNumbers];
 
+console.log(originalNumbers);
 
 //2.Combining Arrays
 
 export const winners = ['first'];
 export const runnerUps = ['second', 'third', 'fourth', 'fifth'];
 export const combinedArray = [...winners, ...runnerUps]
-
+console.log(combinedArray);
 
 // #3 Combining objects
 export const bob = {
@@ -23,7 +24,7 @@ export const bob = {
   };
   
   export const originalPersons = Object.assign(bob, kyle);
-
+  console.log(originalPersons);
 
 
   // #4 Modifying values in arrays of objects
@@ -54,3 +55,4 @@ export const originalUpdates = data.map(task => {
   return task;
 });
 
+console.log(originalUpdates);

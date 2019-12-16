@@ -1,4 +1,5 @@
 // #1 Object Destructuring
+
 export const object = { name: 'elvis', title: 'hip swinger' };
 
 export const {name :person,title:job} =object;
@@ -26,19 +27,15 @@ console.log(id); // 1
 
 // #3 Object with key value pairs: construct a statement
 
-export const wishes ={wish :"hello",name:"taylor"};
-export const{wish :wish, name:name}=wishes;
+export const wishes ={wish :"hello", name:"taylor"};
+export const {wish, name}=wishes;
+console.log(wish,",",name,"!");
+// 'hello, taylor!'
 
-console.log(wish,",",name ,"!");
-//  'hello, taylor!'
 
-
-//  #4 Create a new object given the destrutured values above
+//  #4 Create a new o;bject given the destrutured values above
 
 export const object1={user : user, address:address,id:id};
 console.log(object1);
-
-
-
 
 

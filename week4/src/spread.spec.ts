@@ -7,7 +7,7 @@ describe ('test for spread.ts',()=>{
 
     it('should output array ',() => {
         expect(copyarr[0]).equal(1);
-        console.log(copyarr);
+        
     });
 });
 
@@ -28,7 +28,7 @@ describe ('test for combine arrays',()=>{
 //  3.Combine of Objects
 describe ('test for combine objects',()=>{
     it('should combine objects ',() => {
-        console.log(originalPersons)
+        
         expect(originalPersons['boy']).equal('Kyle');
     });
 });
@@ -37,8 +37,7 @@ describe ('test for combine objects',()=>{
 
   describe ('test for Values in arrays  objects',()=>{
     it('should combine array objects ',() => {
-        console.log(originalUpdates);
+        
         expect(originalUpdates[1].task.includes('Do the other thing...again'));
     });
 });
-
